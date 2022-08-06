@@ -1,0 +1,94 @@
+<button class="btn-accordion flex direction-row gap-15">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+    <span>Ordernar por</span>
+</button>
+
+<div class="content-accordion-general">
+    <div class="content-accordion-item">
+        <div class="title  flex align-items-center direction-row gap-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            <span>CATEGORÍA</span>
+        </div>
+        <ul class="list-options-category ">
+            <li>
+                <a [routerLink]="['/']">Sueters</a>
+            </li>
+            <li>
+                <a [routerLink]="['/']">Polos</a>
+            </li>
+            <li>
+                <a [routerLink]="['/']">Bolsos</a>
+            </li>
+            <li>
+                <a [routerLink]="['/']">Funda de Laptop</a>
+            </li>
+            <li>
+                <a [routerLink]="['/']">Tazas</a>
+            </li>
+            <li>
+                <a [routerLink]="['/']">Stickers</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content-accordion-item">
+        <div class="title flex align-items-center direction-row gap-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            <span>PRECIO</span>
+        </div>
+        <div class="list-options-price flex align-items-center ">
+            <input type="range">
+        </div>
+    </div>
+    <div class="content-accordion-item">
+        <div class="title flex align-items-center direction-row gap-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            <span>COLOR</span>
+        </div>
+        <ul class="list-options-color select">
+            <li>
+                <a [routerLink]="['/']" class="flex align-items-center direction-row gap-8">
+                    <div class="color" style="background-color: {{color1}};"></div>
+                    <span>Blanco</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/']" class="flex align-items-center direction-row gap-8">
+                    <div class="color" style="background-color: {{color2}}"></div>
+                    <span>Negro</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/']" class="flex align-items-center direction-row gap-8">
+                    <div class="color" style="background-color: {{color3}};"></div>
+                    <span>Azul</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/']" class="flex align-items-center direction-row gap-8">
+                    <div class="color" style="background-color: {{color4}};"></div>
+                    <span>Beige</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/']" class="flex align-items-center direction-row gap-8">
+                    <div class="color" style="background-color: {{color5}};"></div>
+                    <span>Rojo</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/']" class="flex align-items-center direction-row gap-8">
+                    <div class="color" style="background-color: {{color6}};"></div>
+                    <span>Gris</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

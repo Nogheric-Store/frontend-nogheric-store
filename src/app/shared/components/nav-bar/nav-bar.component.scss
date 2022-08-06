@@ -1,0 +1,17 @@
+
+.content-li {
+    list-style: none;
+    width: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 10px;
+    padding: 10px;
+    & li {
+        & a {
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--color-text-general);
+            white-space: nowrap;
+        }
+    }
+}
