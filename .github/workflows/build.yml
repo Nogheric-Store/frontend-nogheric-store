@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Inciar build
-        run: echo "Ejecutando NPM Install" && ls -la
+        run: echo "Ejecutando NPM Install" && cd ../frontend-nogheric-store && npm install
