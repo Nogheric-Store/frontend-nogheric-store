@@ -4,10 +4,20 @@ on:
   push:
     branches:
       - feature/devops
+    paths-ignore:
+      - '**.md'
 
 jobs:
   build_frontend:
     runs-on: ubuntu-20.04
     steps:
-      - name: Inciar build
-        run: echo "Ejecutando NPM Install" && cd && ls -la work/frontend-nogheric-store
+      - uses: actions/checkout@v3
+      - name: Setup Node 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: npm
+      - run: npm ci
+#      - run: npm run build
+#      - run: npm run format-check
+#      - run: npm test
