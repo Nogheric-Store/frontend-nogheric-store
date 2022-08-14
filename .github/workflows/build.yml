@@ -1,0 +1,13 @@
+name: Construir Frontend
+
+on:
+  push:
+    branches:
+      - feature/devops
+
+jobs:
+  build_frontend:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Inciar build
+        run: echo "Ejecutando NPM Install" && npm install
